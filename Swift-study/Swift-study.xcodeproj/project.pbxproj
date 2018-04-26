@@ -13,6 +13,8 @@
 		811E918D2091B3D000F0EEE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811E918C2091B3D000F0EEE6 /* Assets.xcassets */; };
 		811E91902091B3D000F0EEE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811E918E2091B3D000F0EEE6 /* LaunchScreen.storyboard */; };
 		811E919C2091B8EF00F0EEE6 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E919B2091B8EF00F0EEE6 /* CustomViewCell.swift */; };
+		811E919E2091C02100F0EEE6 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E919D2091C02100F0EEE6 /* SliderViewController.swift */; };
+		811E91A22091C0CD00F0EEE6 /* SliderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811E91A12091C0CD00F0EEE6 /* SliderViewController.storyboard */; };
 		F728BF2F1A015F9E0539864E /* Pods_Swift_study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A14F6070DD7F90389023A72 /* Pods_Swift_study.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		811E918F2091B3D000F0EEE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		811E91912091B3D000F0EEE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		811E919B2091B8EF00F0EEE6 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		811E919D2091C02100F0EEE6 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		811E91A12091C0CD00F0EEE6 /* SliderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SliderViewController.storyboard; sourceTree = "<group>"; };
 		9A14F6070DD7F90389023A72 /* Pods_Swift_study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_study.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83EC9A6922BD159AAC1F8C8 /* Pods-Swift-study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-study.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift-study/Pods-Swift-study.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				811E91872091B3CC00F0EEE6 /* ViewController.swift */,
+				811E919D2091C02100F0EEE6 /* SliderViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			children = (
 				811E91852091B3CC00F0EEE6 /* AppDelegate.swift */,
 				811E918E2091B3D000F0EEE6 /* LaunchScreen.storyboard */,
+				811E91A12091C0CD00F0EEE6 /* SliderViewController.storyboard */,
 				811E91892091B3CC00F0EEE6 /* Main.storyboard */,
 				811E918C2091B3D000F0EEE6 /* Assets.xcassets */,
 			);
@@ -185,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811E91A22091C0CD00F0EEE6 /* SliderViewController.storyboard in Resources */,
 				811E91902091B3D000F0EEE6 /* LaunchScreen.storyboard in Resources */,
 				811E918D2091B3D000F0EEE6 /* Assets.xcassets in Resources */,
 				811E918B2091B3CC00F0EEE6 /* Main.storyboard in Resources */,
@@ -255,6 +262,7 @@
 				811E91882091B3CC00F0EEE6 /* ViewController.swift in Sources */,
 				811E919C2091B8EF00F0EEE6 /* CustomViewCell.swift in Sources */,
 				811E91862091B3CC00F0EEE6 /* AppDelegate.swift in Sources */,
+				811E919E2091C02100F0EEE6 /* SliderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
