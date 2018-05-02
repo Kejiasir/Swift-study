@@ -1,12 +1,20 @@
 PODS:
   - SnapKit (4.0.0)
+  - SwipeableTabBarController (1.0.15)
 
 DEPENDENCIES:
   - SnapKit
+  - SwipeableTabBarController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SnapKit
+    - SwipeableTabBarController
 
 SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwipeableTabBarController: 8b02dc2f4f4899f8bb35ccad16ea34a0da1fb465
 
-PODFILE CHECKSUM: de43204db0797bcff90620c4357c7bc7a1fa3e23
+PODFILE CHECKSUM: dc63f671e66537f0b5b13bf46002133e8116ca31
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0

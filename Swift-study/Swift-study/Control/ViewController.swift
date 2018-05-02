@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad() 
         self.title = "首页"
+        self.view.backgroundColor = .white
         tableView.dataSource = self
         tableView.delegate = self
     }
