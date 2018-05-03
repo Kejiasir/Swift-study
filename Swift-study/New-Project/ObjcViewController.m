@@ -1,21 +1,20 @@
 //
-//  CeShiViewController.m
+//  ObjcViewController.m
 //  New-Project
 //
-//  Created by Yi Qing on 2018/4/28.
+//  Created by Yi Qing on 2018/5/3.
 //  Copyright © 2018年 Arvin. All rights reserved.
 //
 
-#import "CeShiViewController.h"
-
+#import "ObjcViewController.h"
 // 在 oc 类中使用 swift 类的文件，需要导入“项目名-Swift.h” 头文件
 #import "New_Project-Swift.h"
 
-@interface CeShiViewController ()
+@interface ObjcViewController ()
 
 @end
 
-@implementation CeShiViewController
+@implementation ObjcViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

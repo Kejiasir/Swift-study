@@ -1,0 +1,6 @@
+framework module Pods_Swift_Widget {
+  umbrella header "Pods-Swift-Widget-umbrella.h"
+
+  export *
+  module * { export * }
+}

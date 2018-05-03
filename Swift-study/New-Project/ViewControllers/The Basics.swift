@@ -1,29 +1,19 @@
 //
-//  Test0ViewController.swift
+//  The Basics.swift
 //  New-Project
 //
-//  Created by Yi Qing on 2018/4/28.
+//  Created by Yi Qing on 2018/5/3.
 //  Copyright © 2018年 Arvin. All rights reserved.
 //
 
 import UIKit
 
-class Test0ViewController: BasicViewController {
+class The_Basics: BasicViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-    }
-    
-    override func btnClick(_ sender: UIButton) {
-        if let title = self.title {
-            print("btnClick:\(title)")
-            
-            let ceshi = CeShiViewController()
-            print(ceshi)
-            
-        }
     }
     
     override func didReceiveMemoryWarning() {

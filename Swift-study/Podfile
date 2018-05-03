@@ -1,13 +1,31 @@
 
 platform :ios, '9.0'
+use_frameworks!
+
+def shared_pods
+    pod 'SnapKit'
+end
 
 target 'Swift-study' do
-    use_frameworks!
-    pod 'SnapKit' 
+    shared_pods 
 end
 
 target 'New-Project' do
-    use_frameworks!
+    shared_pods
     pod 'SwipeableTabBarController'
-    pod 'SnapKit'
 end
+
+target 'Swift-Widget' do
+    shared_pods
+end
+
+
+#[!] The `Swift-study [Debug]` target overrides the `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` build setting defined in `Pods/Target Support Files/Pods-Swift-study/Pods-Swift-study.debug.xcconfig'. This can lead to problems with the CocoaPods installation
+#- Use the `$(inherited)` flag, or
+#- Remove the build settings from the target.
+#
+#[!] The `Swift-study [Release]` target overrides the `ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES` build setting defined in `Pods/Target Support Files/Pods-Swift-study/Pods-Swift-study.release.xcconfig'. This can lead to problems with the CocoaPods installation
+#- Use the `$(inherited)` flag, or
+#- Remove the build settings from the target.
+
+# TARGETS -> Build Stting -> Build Options -> Always Enbed Swift Standard Libraries -> 选择 other 后弹框中添加 $(inherited)

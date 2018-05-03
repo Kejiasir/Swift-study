@@ -1,13 +1,12 @@
 //
-//  CeShiViewController.h
+//  ObjcViewController.h
 //  New-Project
 //
-//  Created by Yi Qing on 2018/4/28.
+//  Created by Yi Qing on 2018/5/3.
 //  Copyright © 2018年 Arvin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-
 /*
  相关官方文档描述
  https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/Migration.html#//apple_ref/doc/uid/TP40014216-CH12-ID108
@@ -20,8 +19,8 @@
 // swift 混编 oc，oc 类不能继承 swift 类
 // Cannot subclass a class that was declared with the 'objc_subclassing_restricted' attribute
 // 无法对使用'objc_subclassing_restricted'属性声明的类进行子类化
-//@interface CeShiViewController : BasicViewController
+//@interface ObjcViewController : BasicViewController
 
-@interface CeShiViewController : UIViewController
+@interface ObjcViewController : UIViewController
 
 @end

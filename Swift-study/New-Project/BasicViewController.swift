@@ -11,8 +11,10 @@ import SnapKit
 
 class BasicViewController: UIViewController {
     
-    // 利用便利构造函数设置参数初始化控制器
-    convenience init(title: String? = "") {
+    /// 利用便利构造函数设置参数初始化控制器
+    ///
+    /// - Parameter title: 控制器标题
+    convenience init(title: String) {
         self.init()
         self.title = title
     }
