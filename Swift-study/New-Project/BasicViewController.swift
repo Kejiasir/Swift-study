@@ -22,7 +22,11 @@ class BasicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+        addButton()
+    }
+    
+    /// 添加一个按钮
+    func addButton() -> Void {
         let button = UIButton(type: .custom)
         button.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
@@ -37,13 +41,15 @@ class BasicViewController: UIViewController {
         }
     }
     
+    /// 按钮点击事件
+    ///
+    /// - Parameter sender: 被点击的按钮对象
     @objc func btnClick(_ sender: UIButton) -> Void {}
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     /*
      // MARK: - Navigation

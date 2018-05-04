@@ -16,6 +16,7 @@
 		811E919C2091B8EF00F0EEE6 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E919B2091B8EF00F0EEE6 /* CustomViewCell.swift */; };
 		811E919E2091C02100F0EEE6 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E919D2091C02100F0EEE6 /* SliderViewController.swift */; };
 		811E91A22091C0CD00F0EEE6 /* SliderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811E91A12091C0CD00F0EEE6 /* SliderViewController.storyboard */; };
+		814747BA209C3FC40075640D /* Practice1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814747B9209C3FC40075640D /* Practice1ViewController.swift */; };
 		8161D4822099649600A72D96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8161D4812099649600A72D96 /* AppDelegate.m */; };
 		8161D4852099649600A72D96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8161D4842099649600A72D96 /* ViewController.m */; };
 		8161D4882099649600A72D96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8161D4862099649600A72D96 /* Main.storyboard */; };
@@ -107,6 +108,7 @@
 		811E919D2091C02100F0EEE6 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		811E91A12091C0CD00F0EEE6 /* SliderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SliderViewController.storyboard; sourceTree = "<group>"; };
 		811E9944D15867249DDB720E /* Pods-New-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New-Project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New-Project/Pods-New-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		814747B9209C3FC40075640D /* Practice1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice1ViewController.swift; sourceTree = "<group>"; };
 		8161D47E2099649600A72D96 /* Runtime-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Runtime-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8161D4802099649600A72D96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8161D4812099649600A72D96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -312,6 +314,14 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		814747B8209C3F790075640D /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				814747B9209C3FC40075640D /* Practice1ViewController.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
 		8161D47F2099649600A72D96 /* Runtime-Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +384,7 @@
 		817402FD209326E3000123FC /* New-Project */ = {
 			isa = PBXGroup;
 			children = (
+				814747B8209C3F790075640D /* Practice */,
 				81665651209A9C7C00D15B41 /* ViewControllers */,
 				81EC9ACE209415C3000F19DB /* CustomNavigationController.swift */,
 				81EC9ACC20940F2A000F19DB /* CustomTabBarController.swift */,
@@ -725,6 +736,7 @@
 				81665677209AB66600D15B41 /* Nested Types.swift in Sources */,
 				8166566F209AB63600D15B41 /* Deinitialization.swift in Sources */,
 				8166565B209AB59E00D15B41 /* Control Flow.swift in Sources */,
+				814747BA209C3FC40075640D /* Practice1ViewController.swift in Sources */,
 				81EC9AD920941D02000F19DB /* BasicViewController.swift in Sources */,
 				81EC9AD520941C30000F19DB /* Test3ViewController.swift in Sources */,
 				8166566D209AB62900D15B41 /* Initialization.swift in Sources */,

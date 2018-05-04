@@ -13,9 +13,10 @@ class Test2ViewController: BasicViewController {
     override func viewDidLoad() {
         super.viewDidLoad() 
         self.view.backgroundColor = .red
-    }
+    } 
     
-    override func btnClick(_ sender: UIButton) { 
+    override func btnClick(_ sender: UIButton) {
+        self.navigationController?.pushViewController(Practice1ViewController(title: "Practice"), animated: true)
     }
     
     override func didReceiveMemoryWarning() {

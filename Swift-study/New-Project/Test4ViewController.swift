@@ -13,10 +13,7 @@ class Test4ViewController: BasicViewController {
     override func viewDidLoad() {
         super.viewDidLoad() 
         self.view.backgroundColor = .green
-    }
-    
-    override func btnClick(_ sender: UIButton) {
-    }
+    } 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
