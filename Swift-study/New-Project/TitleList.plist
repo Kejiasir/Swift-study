@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>The Basics</string>
+	<string>Basic Operators</string>
+	<string>Strings and Characters</string>
+	<string>Collection Types</string>
+	<string>Control Flow</string>
+	<string>Functions</string>
+	<string>Closures</string>
+	<string>Enumerations</string>
+	<string>Classes and Structures</string>
+	<string>Properties</string>
+	<string>Methods</string>
+	<string>Subscripts</string>
+	<string>Inheritance</string>
+	<string>Initialization</string>
+	<string>Deinitialization</string>
+	<string>Optional Chaining</string>
+	<string>Error Handling</string>
+	<string>Type Casting</string>
+	<string>Nested Types</string>
+	<string>Extensions</string>
+	<string>Protocols</string>
+	<string>Generics</string>
+	<string>Automatic Reference Counting</string>
+	<string>Memory Safety</string>
+	<string>Access Control</string>
+	<string>Advanced Operators</string>
+</array>
+</plist>

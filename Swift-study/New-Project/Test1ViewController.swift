@@ -4,7 +4,7 @@
 //
 //  Created by Yi Qing on 2018/4/28.
 //  Copyright © 2018年 Arvin. All rights reserved.
-// Swift中Runtime简单了解以及项目中的运用 https://www.jianshu.com/p/a7295f759480
+//  Swift中Runtime简单了解以及项目中的运用 https://www.jianshu.com/p/a7295f759480
 
 import UIKit
 
@@ -32,7 +32,6 @@ class Test1ViewController: BasicViewController, UITableViewDataSource, UITableVi
         }
         cell?.textLabel?.text = "\(datasource[indexPath.row])"
         return cell!
-        
     }
     
     // MARK: - UITableViewDelegate
@@ -73,11 +72,7 @@ class Test1ViewController: BasicViewController, UITableViewDataSource, UITableVi
         return 60
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    // MARK: - lazy load
     lazy var tableView = { () -> UITableView in
         let tab = UITableView(frame: .zero, style: .plain)
         tab.dataSource = self
@@ -85,22 +80,9 @@ class Test1ViewController: BasicViewController, UITableViewDataSource, UITableVi
         return tab
     }()
     
-    lazy var datasource: Array = {
-        return ["The Basics", "Basic Operators", "Strings and Characters", "Collection Types", "Control Flow",
-                "Functions", "Closures", "Enumerations", "Classes and Structures", "Properties", "Methods",
-                "Subscripts", "Inheritance", "Initialization", "Deinitialization", "Optional Chaining", "Error Handling",
-                "Type Casting", "Nested Types", "Extensions", "Protocols", "Generics", "Automatic Reference Counting",
-                "Memory Safety", "Access Control", "Advanced Operators"]
+    lazy var datasource: Array = { () -> [String] in
+        let path = Bundle.main.path(forResource: "TitleList", ofType: "plist")
+        return NSArray(contentsOfFile: path ?? "") as! [String]
     }()
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }

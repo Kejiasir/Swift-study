@@ -15,7 +15,7 @@ class Test4ViewController: BasicViewController {
         self.view.backgroundColor = .green
     }
     
-    override func btnClick(_ sender: UIButton) { 
+    override func btnClick(_ sender: UIButton) {
     }
     
     override func didReceiveMemoryWarning() {

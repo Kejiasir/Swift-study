@@ -53,6 +53,7 @@
 		81665681209AB6A600D15B41 /* Memory Safety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81665680209AB6A600D15B41 /* Memory Safety.swift */; };
 		81665683209AB6B200D15B41 /* Access Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81665682209AB6B200D15B41 /* Access Control.swift */; };
 		81665685209AB6BC00D15B41 /* Advanced Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81665684209AB6BC00D15B41 /* Advanced Operators.swift */; };
+		81665689209AE6B300D15B41 /* TitleList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81665688209AE6B300D15B41 /* TitleList.plist */; };
 		817402FF209326E3000123FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817402FE209326E3000123FC /* AppDelegate.swift */; };
 		81740306209326E5000123FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81740305209326E5000123FC /* Assets.xcassets */; };
 		81740309209326E5000123FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81740307209326E5000123FC /* LaunchScreen.storyboard */; };
@@ -152,6 +153,7 @@
 		81665680209AB6A600D15B41 /* Memory Safety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memory Safety.swift"; sourceTree = "<group>"; };
 		81665682209AB6B200D15B41 /* Access Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Access Control.swift"; sourceTree = "<group>"; };
 		81665684209AB6BC00D15B41 /* Advanced Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Advanced Operators.swift"; sourceTree = "<group>"; };
+		81665688209AE6B300D15B41 /* TitleList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TitleList.plist; sourceTree = "<group>"; };
 		817402FC209326E3000123FC /* New-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		817402FE209326E3000123FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81740305209326E5000123FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -386,6 +388,7 @@
 				8166564E209A9AA000D15B41 /* ObjcViewController.h */,
 				8166564F209A9AA000D15B41 /* ObjcViewController.m */,
 				81740305209326E5000123FC /* Assets.xcassets */,
+				81665688209AE6B300D15B41 /* TitleList.plist */,
 				8174030A209326E5000123FC /* Info.plist */,
 			);
 			path = "New-Project";
@@ -554,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81740309209326E5000123FC /* LaunchScreen.storyboard in Resources */,
+				81665689209AE6B300D15B41 /* TitleList.plist in Resources */,
 				81740306209326E5000123FC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
