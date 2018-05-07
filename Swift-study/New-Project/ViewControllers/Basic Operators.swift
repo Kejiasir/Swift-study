@@ -4,7 +4,7 @@
 //
 //  Created by Yi Qing on 2018/5/3.
 //  Copyright © 2018年 Arvin. All rights reserved.
-//  基本运算符 http://waikeung.info/thread-1071102-1-1.html
+//  基本运算符
 
 /*
  运算符包括一元、二元、三元：
@@ -25,7 +25,7 @@ class Basic_Operators: BasicViewController {
     }
     
     override func btnClick(_ sender: UIButton) {
-        test9()
+        test8()
     }
     
     // MARK: - 赋值运算符
@@ -68,10 +68,9 @@ class Basic_Operators: BasicViewController {
         
         // 加法运算符同时也支持 String  的拼接：
         "hello, " + "world" // equals "hello, world"
-    }
-    
-    // MARK: - 余数运算符
-    func test3() -> () {
+        
+        
+        // MARK: 余数运算符
         // 余数运算符（ a % b ）可以求出多少个 b  的倍数能够刚好放进 a  中并且返回剩下的值（就是我们所谓的余数）。
         // 余数运算符（ % ）同样会在别的语言中称作取模运算符。总之，严格来讲的话这个行为对应着 Swift 中对负数的操作，所以余数要比模取更合适。
         // 现在我们展示余数运算符如何生效。要计算  9 % 4  ，你首先要求出多少个 4  能够放到 9 里边：
@@ -90,10 +89,8 @@ class Basic_Operators: BasicViewController {
         // 得到余数 -1 。
         
         // 当 b为负数时它的正负号被忽略掉了。这意味着 a % b  与 a % -b  能够获得相同的答案。
-    }
-    
-    // MARK: - 一元加减运算
-    func test4() -> () {
+        
+        
         // MARK: 一元减号运算符
         // 数字值的正负号可以用前缀 – 来切换，我们称之为 一元减号运算符：
         let three = 3
@@ -111,7 +108,7 @@ class Basic_Operators: BasicViewController {
     }
     
     // MARK: - 组合赋值符号
-    func test5() -> () {
+    func test3() -> () {
         // 如同 C ，Swift 提供了由赋值符号（ = ）和其他符号组成的 组合赋值符号 。一个加赋值符号的栗子 （ += ）：
         var a = 1
         a += 2
@@ -122,7 +119,7 @@ class Basic_Operators: BasicViewController {
     }
     
     // MARK: - 比较运算符
-    func test6() -> () {
+    func test4() -> () {
         // Swift 支持所有 C 的标准比较运算符：
         // 相等 ( a == b )
         // 不相等 ( a != b )
@@ -159,7 +156,7 @@ class Basic_Operators: BasicViewController {
     }
     
     // MARK: - 三元条件运算符
-    func test7() -> () {
+    func test5() -> () {
         // 三元条件运算符是一种有三部分的特殊运算，它看起来是这样的： question ? answer1 : answer2  。
         // 这是一种基于 question  是真还是假来选择两个表达式之一的便捷写法。如果 question  是真，则会判断为 answer1  并且返回它的值；否则，它判断为 answer2  并且返回它的值。
         // 三元条件运算符就是下边代码的简写：
@@ -191,7 +188,7 @@ class Basic_Operators: BasicViewController {
     }
     
     // MARK: - 合并空值运算符
-    func test8() -> () {
+    func test6() -> () {
         // 合并空值运算符 （ a ?? b ）如果可选项 a  有值则展开，如果没有值，是 nil  ，则返回默认值 b 。表达式 a 必须是一个可选类型。表达式 b  必须与 a  的储存类型相同。
         // 合并空值运算符是下边代码的缩写：
         // a != nil ? a! : b
@@ -214,7 +211,7 @@ class Basic_Operators: BasicViewController {
     }
     
     // MARK: - 区间运算符
-    func test9() -> () {
+    func test7() -> () {
         // Swift 包含了两个 区间运算符 ，他们是表示一个范围的值的便捷方式。
         
         // MARK: 闭区间运算符
@@ -274,7 +271,7 @@ class Basic_Operators: BasicViewController {
     }
     
     // MARK: - 逻辑运算符
-    func test10() -> () {
+    func test8() -> () {
         // 逻辑运算符可以修改或者合并布尔逻辑值 true  和 false  。Swift 支持三种其他基于 C 的语言也包含的标准逻辑运算符
         // 逻辑 非  ( !a )
         // 逻辑 与  ( a && b )
@@ -333,7 +330,7 @@ class Basic_Operators: BasicViewController {
         // Swift 语言中逻辑运算符 && 和 || 是左相关的，这意味着多个逻辑运算符组合的表达式会首先计算最左边的子表达式。
         
         
-        // MARK: - 显式括号
+        // MARK: 显式括号
         // 很多时候虽然不被要求，但使用括号还是很有用的，这能让复杂的表达式更容易阅读。在上文当中的门禁栗子里，把前边部分的表达式用圆括号括起来就会让整个组合表达式的意图更加明显：
         if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
             print("Welcome!")

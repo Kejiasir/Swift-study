@@ -17,7 +17,7 @@
  
  集合类型
  Array: 数组
- Set: 集合
+ Set: 合集
  Dictionary: 字典
  
  和 C 一样，Swift 用变量存储和调用值，通过变量名来做区分。
@@ -41,11 +41,12 @@ class The_Basics: BasicViewController {
     }
     
     override func btnClick(_ sender: UIButton) {
-        test14()
+        
     }
     
     // MARK: - 常量和变量
     func test1() -> () {
+        // MARK: 声明常量和变量
         // 常量和变量必须在使用前被声明，使用关键字 let 来声明常量，使用关键字 var 来声明变量。
         let maximumNumberOfLoginAttempts = 10
         let currentLoginAttempt = 0
@@ -58,10 +59,9 @@ class The_Basics: BasicViewController {
         // 在一行里写多句代码，需要加分号。
         x = 10; y = 20; z = 30;
         print(x, y, z)
-    }
-    
-    // MARK: - 类型标注
-    func test2() -> () {
+        
+        
+        // MARK: 类型标注
         // 你可以在声明一个变量或常量的时候提供类型标注，来明确变量或常量能够储存值的类型。
         var welcomeMessage: String
         
@@ -71,10 +71,9 @@ class The_Basics: BasicViewController {
         
         // 你可以在一行中定义多个相关的变量为相同的类型，用逗号分隔，只要在最后的变量名字后边加上类型标注。
         var red, green, blue: Double
-    }
-    
-    // MARK: - 命名常量和变量
-    func test3() -> () {
+        
+        
+        // MARK: 命名常量和变量
         // 常量和变量的名字几乎可以使用任何字符，甚至包括 Unicode 字符：
         let π = 3.14159
         let 你好 = "你好世界"
@@ -93,6 +92,7 @@ class The_Basics: BasicViewController {
         let languageName = "Swift"
         // languageName = "Swift++"
         
+        
         // MARK: 输出常量和变量
         // 你可以使用 print(_:separator:terminator:) 函数来打印当前常量和变量中的值。
         print(friendlyWelcome)
@@ -103,14 +103,14 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 分号
-    func test4() -> () {
+    func test2() -> () {
         // 和许多其他的语言不同，Swift 并不要求你在每一句代码结尾写分号（ ; ），当然如果你想写的话也没问题。总之，如果你想在一行里写多句代码，分号还是需要的。
         let cat = "🐱"; print(cat)
         // 输出 "🐱"
     }
     
     // MARK: - 整数
-    func test5() -> () {
+    func test3() -> () {
         // 整数就是没有小数部分的数字，比如 42 和 -23 。整数可以是有符号（正，零或者负），或者无符号（正数或零）。
         // Swift 提供了 8，16，32 和 64 位编码的有符号和无符号整数，这些整数类型的命名方式和 C 相似，例如 8 位无符号整数的类型是 UInt8 ，32 位有符号整数的类型是 Int32 。与 Swift 中的其他类型相同，这些整数类型也用开头大写命名法。
         // MARK: 整数范围
@@ -130,8 +130,10 @@ class The_Basics: BasicViewController {
         // 在64位平台上， UInt 长度和 UInt64 长度相同。
         // 只在的确需要存储一个和当前平台原生字长度相同的无符号整数的时候才使用 UInt 。其他情况下，推荐使用 Int ，即使已经知道存储的值都是非负的。
         // 如同类型安全和类型推断中描述的那样，统一使用 Int  会提高代码的兼容性，同时可以避免不同数字类型之间的转换问题，也符合整数的类型推断。
-        
-        // MARK: 浮点数
+    }
+    
+    // MARK: - 浮点数
+    func test4() -> () {
         // 浮点数是有小数的数字，比如 3.14159 , 0.1 , 和 -273.15 。
         // 浮点类型相比整数类型来说能表示更大范围的值，可以存储比 Int 类型更大或者更小的数字。Swift 提供了两种有符号的浮点数类型。
         // Double代表 64 位的浮点数。
@@ -140,7 +142,7 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 类型安全和类型推断
-    func test6() -> () {
+    func test5() -> () {
         // Swift 和 C 以及 Objective-C 相比，只需要少量的类型声明。其实常量和变量仍然需要明确的类型，但是大部分的声明工作 Swift 会帮你做。
         // 在你为一个变量或常量设定一个初始值的时候，类型推断就显得更加有用。它通常在你声明一个变量或常量同时设置一个初始的字面量（文本）时就已经完成。
         // 当你操作不同类型的值时，类型检查能帮助你避免错误。如果你没有为所需要的值进行类型声明，Swift 会使用类型推断的功能推断出合适的类型。通过检查你给变量赋的值，类型推断能够在编译阶段自动的推断出值的类型。
@@ -156,11 +158,11 @@ class The_Basics: BasicViewController {
         // 这字面量 3 没有显式的声明它的类型，但因为后边有一个浮点类型的字面量，所以这个类型就被推断为 Double  。
         let anotherPi = 3 + 0.14159
         
-        print(meaningOfLife, pi, anotherPi) 
+        print(meaningOfLife, pi, anotherPi)
     }
     
     // MARK: - 数值型字面量
-    func test7() -> () {
+    func test6() -> () {
         // 整数型字面量可以写作：
         // 一个十进制数，没有前缀
         // 一个二进制数，前缀是 0b
@@ -195,8 +197,8 @@ class The_Basics: BasicViewController {
         let justOverOneMillion = 1_000_000.000_000_1
     }
     
-    // MARK: 数值类型转换
-    func test8() -> () {
+    // MARK: - 数值类型转换
+    func test7() -> () {
         // 通常来讲，即使我们知道代码中的整数变量和常量是非负的，我们也会使用 Int 类型。经常使用默认的整数类型可以确保你的整数常量和变量可以直接被复用并且符合整数字面量的类型推测。
         // 只有在特殊情况下才会使用整数的其他类型，例如需要处理外部长度明确的数据或者为了优化性能、内存占用等其他必要情况。在这些情况下，使用指定长度的类型可以帮助你及时发现意外的值溢出和隐式记录正在使用数据的本质。
         
@@ -237,7 +239,7 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 类型别名
-    func test9() -> () {
+    func test8() -> () {
         // 类型别名可以为已经存在的类型定义了一个新的可选名字。用 typealias 关键字定义类型别名。
         // 当你根据上下文的语境想要给类型一个更有意义的名字的时候，类型别名会非常高效，例如处理外部资源中特定长度的数据时：
         typealias AudioSample = UInt16
@@ -249,7 +251,7 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 布尔值
-    func test10() -> () {
+    func test9() -> () {
         // Swift 有一个基础的布尔量类型，就是 Bool ，布尔量被作为逻辑值来引用，因为他的值只能是真或者假。Swift为布尔量提供了两个常量值， true 和 false 。
         let orangesAreOrange = true
         let turnipsAreDelicious = false
@@ -280,7 +282,7 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 元组
-    func test11() -> () {
+    func test10() -> () {
         // 元组把多个值合并成单一的复合型的值。元组内的值可以是任何类型，而且可以不必是同一类型。
         let http404Error = (404, "Not Found")
         // http404Error is of type (Int, String), and equals (404, "Not Found")
@@ -320,12 +322,11 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 可选项
-    func test12() -> () {
+    func test11() -> () {
         // 可以利用可选项来处理值可能缺失的情况。可选项意味着：
         // 这里有一个值，他等于x, 或者, 这里根本没有值。
         
-        // MARK: 注意
-        // 在 C 和 Objective-C 中，没有可选项的概念。在 Objective-C 中有一个近似的特性，一个方法可以返回一个对象或者返回 nil 。 nil 的意思是“缺少一个可用对象”。然而，他只能用在对象上，却不能作用在结构体，基础的 C 类型和枚举值上。
+        // 注意：在 C 和 Objective-C 中，没有可选项的概念。在 Objective-C 中有一个近似的特性，一个方法可以返回一个对象或者返回 nil 。 nil 的意思是“缺少一个可用对象”。然而，他只能用在对象上，却不能作用在结构体，基础的 C 类型和枚举值上。
         // 对于这些类型，Objective-C 会返回一个特殊的值（例如 NSNotFound ）来表示值的缺失。这种方法是建立在假设调用者知道这个特殊的值并记得去检查他。然而，Swift 中的可选项就可以让你知道任何类型的值的缺失，他并不需要一个特殊的值。
         
         // 下面的栗子演示了可选项如何作用于值的缺失，Swift 的 Int 类型中有一个初始化器，可以将 String 值转换为一个 Int 值。然而并不是所有的字符串都可以转换成整数。
@@ -434,7 +435,7 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 错误处理
-    func test13() -> () {
+    func test12() -> () {
         // 在程序执行阶段，你可以使用错误处理机制来为错误状况负责。
         // 相比于可选项的通过值是否缺失来判断程序的执行正确与否，而错误处理机制能允许你判断错误的形成原因，在必要的情况下，还能将你的代码中的错误传递到程序的其他地方。
         // 当一个函数遇到错误情况，他会抛出一个错误，这个函数的访问者会捕捉到这个错误，并作出合适的反应。
@@ -475,7 +476,7 @@ class The_Basics: BasicViewController {
     }
     
     // MARK: - 断言和先决条件
-    func test14() -> () {
+    func test13() -> () {
         /*
          断言和先决条件用来检测运行时发生的事情。你可以使用它们来保证在执行后续代码前某必要条件是满足的。如果布尔条件在断言或先决条件中计算为 true ，代码就正常继续执行。如果条件计算为 false，那么程序当前的状态就是非法的；代码执行结束，然后你的 app 终止。
          你可以使用断言和先决条件来验证那些你在写代码时候的期望和假定，所以你可以包含它们作为你代码的一部分。断言能够帮助你在开发的过程中找到错误和不正确的假定，先决条件帮助你探测产品的问题。在运行时帮助你额外验证你的期望，断言和先决条件同样是代码中好用的证明形式。不同于在上文错误处理中讨论的，断言和先决条件并不用于可回复或者期望的错误。由于错误断言或先决条件显示非法的程序状态，所以没办法来抓取错误断言。
