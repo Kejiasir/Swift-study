@@ -46,6 +46,11 @@ open class SwipeableTabBarController: UITabBarController {
         addObserver(self, forKeyPath: kSelectedViewControllerKey, options: .new, context: nil)
     }
 
+    /// Checks if a transition is being performed.
+    private var isTransitioning: Bool {
+        return swipeAnimatedTransitioning.transitionStarted || tapAnimatedTransitioning.transitionStarted
+    }
+
     // MARK: - Public API
 
     override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -99,7 +104,7 @@ open class SwipeableTabBarController: UITabBarController {
 // MARK: - UITabBarControllerDelegate
 extension SwipeableTabBarController: UITabBarControllerDelegate {
 
-    public func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 
         // Get the indexes of the ViewControllers involved in the animation to determine the animation flow.
         guard let fromVCIndex = tabBarController.viewControllers?.index(of: fromVC),
@@ -111,15 +116,19 @@ extension SwipeableTabBarController: UITabBarControllerDelegate {
         return currentAnimatedTransitioningType
     }
 
-    public func tabBarController(_ tabBarController: UITabBarController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    open func tabBarController(_ tabBarController: UITabBarController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return swipeInteractor.interactionInProgress ? swipeInteractor : nil
     }
 
-    public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+    open func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         currentAnimatedTransitioningType = swipeAnimatedTransitioning
     }
 
-    public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    open func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        // Transitioning or interacting.
+        if isTransitioning || swipeInteractor.interactionInProgress {
+            return false
+        }
         currentAnimatedTransitioningType = tapAnimatedTransitioning
         return true
     }

@@ -1,20 +1,24 @@
 PODS:
+  - Kingfisher (4.8.0)
   - SnapKit (4.0.0)
-  - SwipeableTabBarController (1.0.15)
+  - SwipeableTabBarController (1.2.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - SnapKit
   - SwipeableTabBarController
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Kingfisher
     - SnapKit
     - SwipeableTabBarController
 
 SPEC CHECKSUMS:
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwipeableTabBarController: 8b02dc2f4f4899f8bb35ccad16ea34a0da1fb465
+  SwipeableTabBarController: fb724c1e08ea6125c01d7f9ef9dc90f33b12f8bb
 
-PODFILE CHECKSUM: 247e677f13a2f659a9dfb119731d920d16551afe
+PODFILE CHECKSUM: 29205ee48e54e3f71ccbe821ee49f2b1ca796539
 
 COCOAPODS: 1.5.0

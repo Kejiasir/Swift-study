@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import Kingfisher
 
+// MARK: -
 /// 类
 class MyClass {
     
@@ -37,11 +39,17 @@ struct MyStruct {
     }
 }
 
+// MARK: -
 class Practice1ViewController: BasicViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.addSubview(imageView)
+        imageView.snp.makeConstraints { (make) in
+            make.size.equalTo(CGSize(width: 300, height: 150))
+            make.centerX.equalTo(self.view)
+            make.top.equalTo(100)
+        }
     }
     
     override func btnClick(_ sender: UIButton) {
@@ -63,4 +71,33 @@ class Practice1ViewController: BasicViewController {
         `struct`.test()
     }
     
+    // MARK: - 判断字符串是否包含中文
+    func isContainChinese(_ string: String) -> Bool {
+        for (_, value) in string.enumerated() {
+            if ("\u{4E00}" <= value && value <= "\u{9FA5}") {
+                return true
+            }
+        }
+        return false
+    }
+    
+    // MARK: - lazy load
+    lazy var imageView: UIImageView = {
+        let imgView = UIImageView() 
+        imgView.kf.setImage(with: URL(string: "http://oonis1a4c.bkt.clouddn.com/20180112-00-blog.png"))
+        return imgView
+    }()
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+

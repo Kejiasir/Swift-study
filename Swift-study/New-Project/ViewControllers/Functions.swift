@@ -246,7 +246,7 @@ class Functions: BasicViewController {
         // 注意：输入输出形式参数与函数的返回值不同。上边的 swapTwoInts没有定义返回类型和返回值，但它仍然能修改 someInt和 anotherInt的值。输入输出形式参数是函数能影响到函数范围外的另一种替代方式。
     }
     
-    // MARK: - 函数类型(闭包)
+    // MARK: - 函数类型
     func test4() -> () {
         // 每一个函数都有一个特定的函数类型，它由形式参数类型，返回类型组成。
         // 举个栗子：
